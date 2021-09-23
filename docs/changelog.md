@@ -1,4 +1,4 @@
-# WHO Cause of Death - Change log
+# WHO Cause of Death - Change log { #cod-change-log }
 
 ## 1.2.0
 
