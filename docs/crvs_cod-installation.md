@@ -1,4 +1,4 @@
-# WHO Cause of Death - Tracker and Event Installation Guide { #cod-installation }
+# WHO Cause of Death - Tracker and Event Installation Guide { #crvs-cod-installation }
 
 Version 1.2.0 for DHIS 2.34 and higher
 
