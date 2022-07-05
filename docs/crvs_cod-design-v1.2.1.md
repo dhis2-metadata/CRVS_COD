@@ -2,8 +2,8 @@
   
 **RELEASE NOTE**
 
-This will be the last release of the WHO Cause of Death tracker and is going to be discontinued untill the new release of the ICD-11 module.
-The event program is not anymore part of the WHO Cause of Death package.
+This is the last release of the WHO Cause of Death tracker which will be discontinued until the new release of the ICD-11 module.
+The **Cause of Death event program** is no longer included in the WHO Cause of Death package.
 
 ## Overall Design
 
