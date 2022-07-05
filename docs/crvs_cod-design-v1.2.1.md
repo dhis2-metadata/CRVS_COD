@@ -1,6 +1,6 @@
 # WHO Cause of Death - Tracker and Event System Design { #crvs-cod-design }
   
-## Overall Design (comment)
+## Overall Design
 
 The WHO Cause of Death tracker system is configured in order to effectively collect and manage data related to causes of death. It is based on the International Medical Certificate of Cause of Death and ICD-10.
 
