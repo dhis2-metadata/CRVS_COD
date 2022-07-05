@@ -1,25 +1,13 @@
-# WHO Cause of Death - Tracker and Event System Design { #crvs-cod-design }
+# WHO Cause of Death - Tracker System Design { #crvs-cod-design }
   
+**RELEASE NOTE**
+
+This will be the last release of the WHO Cause of Death tracker and is going to be discontinued untill the new release of the ICD-11 module.
+The event program is not anymore part of the WHO Cause of Death package.
+
 ## Overall Design
 
 The WHO Cause of Death tracker system is configured in order to effectively collect and manage data related to causes of death. It is based on the International Medical Certificate of Cause of Death and ICD-10.
-
-There are two programs that comprise its design and can be used depending on the needs of country/organization that is collecting this data.
-
-1. Cause of death (anonymous) - event capture program without registration
-2. Cause of death (tracker) - program with registration
-
-The anonymous  program is an event program while the registration program is a tracker program. Both of these programs share the same data elements, custom form design, program indicators, program rules, etc.
-
-A comparison of these two programs, taken from the implementation guide, can be seen below
-
-### Cause of death (anonymous) - event program
-
-| Pros | Cons |
-|---|---|
-| Simple structure/data model|Not possible to record identifiers in a way where uniqueness can be enforced, and person attributes can be encrypted. |
-| Uses the Event Capture app, which supports offline data entry in the Web browser. | Due to lack of identifiers, finding and editing existing data is difficult. |
-| User friendly data entry screen, e.g. pertaining to display of data validation warnings. |
 
 ### Cause of death (registration) - tracker program
 
@@ -28,7 +16,11 @@ A comparison of these two programs, taken from the implementation guide, can be 
 | Supports use of unique identifiers, as well as person attributes. This is necessary for example if considering interoperability with other CRVS systems, and for finding and editing data. | No support for offline data entry in the web browser. |
 | Data and system becomes more sensitive when including person identifiers.|Less user friendly data entry screen, e.g. pertaining to display of validation warnings. |
 
-What version to choose depends on the specific situation, however, the offline capability of the event program is likely to be of importance in many settings. Note that the variables (data elements) used by both programmes are the same, and data from the two are thus comparable should one switch from using one version to the other.
+**DIFFERENCES FOR TRANSLATION**
+
+You can find specific language version (FR & EN) for this package as by ICD nature there is a substantial difference in an option set:
+- FR version: ICD_SMol - dictionnaire local (fr) 
+- EN version: ICD-SMoL - local dictionary
 
 ## Cause of Death Workflow
 
@@ -38,17 +30,11 @@ The cause of death module uses a framework based off of the ICD (International C
 
 ## Program Overview
 
-Both the event and tracker version of the WHO cause of death module only consist of one program stage, as they are very similar in their design; with the key design change being the ability to register attributes in the tracker based program. The cause of death module uses a custom form in order to meet design requirements to closely reflect the paper form in a web browser, however sections have also been made in the event a mobile device is used. This structure can be seen in the diagram below.
+The cause of death module uses a custom form in order to meet design requirements to closely reflect the paper form in a web browser, however sections have also been made in the event a mobile device is used. This structure can be seen in the diagram below.
 
 ![Programme Overview](resources/images/CoD_Program_overview.png)
 
-Descriptions of these programs are described in further detail in the sections below.
-
-### Event Program - Cause of death (anonymous)
-
-| Stage | Description |
-|---|---|
-| Cause of death (anonymous) | Contains all information necessary to record the information associated with the medical certificate of causes of death. Uses a custom form layout to reflect the paper-based certificate, with sections available to use on mobile devices. |  
+Description of the program is described in further detail in the sections below.  
 
 ### Tracker Program - Cause of death (registration)
 
@@ -65,7 +51,7 @@ You can read more about program rules here:
 
 [Configure program rules](#webapi_nti_program_rules)
 
-Program rules are a critical component of the cause of death module in both tracker and event programs. Program rules are not only being used to reduce data entry errors through the use of the hide field and show error/warning actions, but also assign and code the underlying cause of death using ICD-10 SMoL and ICD-10 full codes; considered a key feature to this module in order to obtain higher quality mortality data. For a full list and description of the program rules for this program, see the detailed meta-data list here
+Program rules are a critical component of the cause of death module. Program rules are not only being used to reduce data entry errors through the use of the hide field and show error/warning actions, but also assign and code the underlying cause of death using ICD-10 SMoL and ICD-10 full codes; considered a key feature to this module in order to obtain higher quality mortality data. For a full list and description of the program rules for this program, see the detailed meta-data list here
 
 ### Hide Field
 
@@ -79,13 +65,12 @@ Note that on a mobile device the field will be hidden, as the form will default 
 
 ### Show Warning/Show Error
 
-A number of error/warning messages are built into the form in order to point out likely data entry issues. These messages will be displayed immediately within the event program when it detects a problem
+A number of error/warning messages are built into the form in order to point out likely data entry issues. 
+These messages will be displayed upon event completion only.
   
 ![Warning](resources/images/CoD_show_warning.png)
 
 ![Validation Error](resources/images/CoD_validation_error.png)
-
-For the tracker program, they will display upon event completion only.
 
 ![Error/Warning](resources/images/CoD_error_and_warning.png)
 
