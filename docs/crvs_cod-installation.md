@@ -1,6 +1,4 @@
-# WHO Cause of Death - Tracker and Event Installation Guide { #crvs-cod-installation }
-
-Version 1.2.0 for DHIS 2.34 and higher
+# WHO Cause of Death - Tracker Installation Guide { #crvs-cod-installation }
 
 ## Introduction
 
@@ -11,13 +9,6 @@ The Cause of Death module consists of a file with DHIS 2 metadata. More specific
 For Tracker program:
 
 - A tracker program with data elements, option sets, custom data entry form, program rules, program indicators etc.
-- A standard report for validation of data.
-- A dashboard with charts and tables for key data.
-- This document describes how to install this module, and perform routine maintenance. This includes the critical task of adapting and improving the dictionary of diagnosis/medical terms, which is essential for the functioning of the module.
-
-For Event program:
-
-- An event program with data elements, option sets, custom data entry form, program rules, program indicators etc.
 - A standard report for validation of data.
 - A dashboard with charts and tables for key data.
 - This document describes how to install this module, and perform routine maintenance. This includes the critical task of adapting and improving the dictionary of diagnosis/medical terms, which is essential for the functioning of the module.
@@ -36,7 +27,7 @@ The data collection form is created based on the International Medical Certifica
 
 For collecting data on the age of the deceased, the data collection form supports use of both date of birth and an estimated age. To facilitate analysis of the data, an additional data element for Age in years has been added to the form, but as a disabled/read-only field. Based on what is entered either as date of birth or estimated age, program rules calculate the age in years and assigns that value to the Age in years data element.
 
-### The dictionary
+### Dictionary
 
 A critical component of the module is a dictionary (ICD-SMoL - local dictionary). The dictionary functions as a link between the medical terms used in data entry, and the ICD-SMoL code used for reporting and analysis of causes of death. In DHIS 2, the dictionary is implemented as an option set. The medical term is the option name, and the option code is made up of three components: the ICD-SMoL code, the ICD-10 code, and an ID. The ID is necessary because several terms could refer to the same ICD-SMoL and ICD-10 codes, and codes need to be unique. The ID itself consists of two parts: a country code (or INT for the ones provided with the module) and a counter. Keeping track of the international and country-specific terms will make it easier in the future to e.g. identify terms used in different countries which could be proposed for the international dictionary.
 
@@ -59,36 +50,6 @@ In order to install the module, an administrator user account on DHIS 2 is requi
 Great care should be taken to ensure that the server itself and the DHIS application is well secured, to restrict access to the data being collected. Even if using this module without any direct patient identifiers like ID or names, the age, sex and health facility could be sufficient to identify an individual. Details on securing a DHIS 2 system is outside the scope of this document, and we refer to the DHIS 2 documentation.
 
 ### Choosing a version of the module
-
-Two versions of the module are provided, using two different types of tracker programmes in DHIS 2:
-
-1. "Single event programme without registration”, referred to here as the event programme.
-2. "Tracker programme with registration", referred to here as the registration programme.
-While the content of both programmes is the same, there are pros and cons of each alternative that should be considered, see below.
-
-#### Event programme
-
-**Pros:**
-
-- Simple structure/data model.
-- Uses the Capture app, which will be replacing Tracker Capture in the future.
-- User friendly data entry screen, e.g. pertaining to display of data validation warnings.
-
-**Cons:**
-
-- Not possible to record identifiers in a way where uniqueness can be enforced, and person attributes can be encrypted.
-- Because of lack of identifiers, finding and editing existing data is difficult.
-
-#### Tracker programme
-
-**Pros:**
-
-Supports use of unique identifiers, as well as person attributes. This is necessary for example if considering interoperability with other CRVS systems, and for finding and editing data.
-
-**Cons:**
-
-- Data and system becomes more sensitive when including person identifiers.
-- What version to choose depends on the specific situation, however, the offline capability of the event programme is likely to be of importance in many settings. Note that the variables (data elements) used by both programmes are the same, and data from the two are thus comparable should one switch from using one version to the other.
 
 ### Importing metadata
 
