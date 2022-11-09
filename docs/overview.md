@@ -15,4 +15,4 @@
 
 ## Metadata Reference
 
-[Version 1.0.1](https://packages.dhis2.org/en/NUTR_AGG/1.0.1/DHIS2.38/NUTR_AGG_COMPLETE_1.0.1_DHIS2.38.xlsx)
+[Version 1.2.1](https://packages.dhis2.org/en/CRVS_COD/1.2.1/DHIS2.37/CRVS_COD_COMPLETE_1.2.1_DHIS2.37.xlsx)
