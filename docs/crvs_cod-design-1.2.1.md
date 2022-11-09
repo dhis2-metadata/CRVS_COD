@@ -1,10 +1,5 @@
 # WHO Cause of Death - Tracker System Design [***DISCONTINUED***] { #crvs-cod-design-121 }
   
-**RELEASE NOTE**
-
-This is the last release of the WHO Cause of Death tracker which will be discontinued until the new release of the ICD-11 module.
-The **Cause of Death event program** is no longer included in the WHO Cause of Death package.
-
 ## Overall Design
 
 The WHO Cause of Death tracker system is configured in order to effectively collect and manage data related to causes of death. It is based on the International Medical Certificate of Cause of Death and ICD-10.
