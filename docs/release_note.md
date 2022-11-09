@@ -1,4 +1,9 @@
-# WHO Cause of Death - Change log { #cod-change-log }
+# Release Note { #crvs-cod-release-note }
+
+## 1.2.1
+
+This is the last release of the WHO Cause of Death tracker which will be discontinued until the new release of the ICD-11 module.
+The **Cause of Death event program** is no longer included in the WHO Cause of Death package.
 
 ## 1.2.0
 
@@ -61,7 +66,7 @@ The French localised version of the Cause of Death package uses a different **IC
 
 - Deleted the following options: `oBOM5bEVVLk, LW7CuavQo3n, leyPoGqs597, k7XHmj3a4nT, trEzz9R11r5, OrqWo8PX6f2, HopjEbx2cdt, C0RFtymQ1zT, VOW0QufZ5NM, w4TLLFtwyMy`
 
-### Event
+### Events
 
 - Included SQL views in metadata file
 - Updated the following options:
