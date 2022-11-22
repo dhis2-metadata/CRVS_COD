@@ -1,5 +1,9 @@
 # Cause of Death
 
+## Release Note
+
+- [Release Note](#crvs-cod-release-note)
+
 ## Design
 
 - [Version 1.2.1](#crvs-cod-design-121)
@@ -8,10 +12,6 @@
 ## Installation
 
 - [Installation Guide](#crvs-cod-installation)
-
-## Release Note
-
-- [Release Note](#crvs-cod-release-note)
 
 ## Metadata Reference
 
