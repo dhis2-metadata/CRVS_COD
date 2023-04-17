@@ -7,7 +7,6 @@
 ## Design
 
 - [Version 1.2.1](#crvs-cod-design)
-- [Version 1.2.0](#crvs-cod-design-120)
 
 ## Installation
 
