@@ -1,4 +1,4 @@
-# WHO Cause of Death - Tracker System Design [***DISCONTINUED***] { #crvs-cod-design-121 }
+# WHO Cause of Death - Tracker System Design [***DISCONTINUED***] { #crvs-cod-design }
   
 ## Overall Design
 
