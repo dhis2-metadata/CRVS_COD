@@ -189,7 +189,7 @@ Example
 
 -   Congenital tuberculosis, a condition associated with infants, is selected as the UCoD, but the age based on the date of birth is 45 years old
 
-![](resources/images/icd11userguide/image30.png){width="6.5in" height="5.583333333333333in"}
+![](resources/images/icd11userguide/image30.png)
 
 Fixing information based on the warnings will result in them no longer appearing.
 
