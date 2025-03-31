@@ -116,11 +116,15 @@ If any changes are needed, you can go back to the respective steps to adjust the
 
 Once you have reviewed and confirmed all the settings, click the \"Install\" button to begin the installation process. This will update and import the Program metadata according to your selected configurations.
 
-A pop-up will display the import progress, showing the metadata being processed. If the import is successful, it will be indicated accordingly. If any issues occur, a red warning icon will appear next to the affected metadata item, indicating an error in the import process.
+A pop-up will display the import progress, showing the metadata being processed. If any issues occur, a red warning icon will appear next to the affected metadata item, indicating an error in the import process.
+
+![](resources/images/icd11installguide/image10.png)
+
+If the import is successful, it will be indicated accordingly. 
+
+![](resources/images/icd11installguide/image11.png) 
 
 Once the import process is complete, click \"Finish\" to launch the application.
-
-![](resources/images/icd11installguide/image11.png) ![](resources/images/icd11installguide/image10.png)
 
 If an error occurs during the import process, review the metadata item that indicates the issue to check for duplications or other conflicts.
 
