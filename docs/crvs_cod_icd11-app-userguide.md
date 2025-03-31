@@ -1,4 +1,4 @@
-# ICD-11 Cause of Death Mortality App
+# ICD-11 Cause of Death Mortality App - User Guide
 
 The ICD-11 cause of death app is developed in close collaboration with several partners supporting cause of death data capture and analysis at the local level. It is maintained by HISP UiO and HISP Vietnam through a joint partnership.
 
@@ -397,7 +397,7 @@ To support multiple languages, the app allows users to add and update translatio
 
 To add a new language for translation, click the "Add Language" button. A popup will appear with a dropdown list of available languages for selection. The translations for the selected language will appear in the last column of the table.
 
-Note: If the selected language is French or Arabic, translations will already be available, as the app currently includes French and Arabic translations in its resources. For other languages, you have to add the translation to the appropriate key.
+> **Note**: If the selected language is French or Arabic, translations will already be available, as the app currently includes French and Arabic translations in its resources. For other languages, you have to add the translation to the appropriate key.
 
 ![](resources/images/icd11userguide/image3.png)
 
